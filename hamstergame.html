@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background: #78af12;">
+
+    <style>
+        .container {
+            position: absolute;
+            left: 330px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 50px 0px black;
+            text-align: center;
+        }
+
+        .head {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            left: 210px;
+            top: 90px;
+        }
+
+        .ground {
+            border-radius: 20px;
+        }
+
+        .hole1 {
+
+            position: absolute;
+            top: 180px;
+            left: 115px;
+
+        }
+
+        .hole2 {
+
+            position: absolute;
+            top: 180px;
+            left: 265px;
+        }
+
+        .hole3 {
+
+            position: absolute;
+            top: 180px;
+            left: 415px;
+        }
+
+
+        .hole4 {
+
+            position: absolute;
+            top: 280px;
+            left: 115px;
+        }
+
+        .hole5 {
+
+            position: absolute;
+            top: 280px;
+            left: 265px;
+        }
+
+        .hole6 {
+
+            position: absolute;
+            top: 280px;
+            left: 415px;
+        }
+
+        .hole7 {
+
+            position: absolute;
+            top: 378px;
+            left: 115px;
+        }
+
+        .hole8 {
+
+            position: absolute;
+            top: 378px;
+            left: 265px;
+        }
+
+        .hole9 {
+
+            position: absolute;
+            top: 378px;
+            left: 415px;
+
+        }
+
+        .ham1 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        @keyframes up {
+            from {
+                top: 60px
+            }
+
+            to {
+                top: 10px;
+
+            }
+        }
+
+
+
+        .forham1 {
+            position: absolute;
+            background: transparent;
+            top: 140px;
+            left: 131px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham2 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham2 {
+            position: absolute;
+            background: transparent;
+            top: 140px;
+            left: 280px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham3 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham3 {
+            position: absolute;
+            background: transparent;
+            top: 140px;
+            left: 430px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham4 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham4 {
+            position: absolute;
+            background: transparent;
+            top: 240px;
+            left: 131px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham5 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham5 {
+            position: absolute;
+            background: transparent;
+            top: 240px;
+            left: 280px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham6 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham6 {
+            position: absolute;
+            background: transparent;
+            top: 240px;
+            left: 430px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham7 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham7 {
+            position: absolute;
+            background: transparent;
+            top: 335px;
+            left: 131px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham8 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham8 {
+            position: absolute;
+            background: transparent;
+            top: 335px;
+            left: 280px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+        }
+
+        .ham9 {
+            position: relative;
+            top: 10px;
+            left: -15px;
+            animation: up 1s;
+        }
+
+        .forham9 {
+            position: absolute;
+            background: transparent;
+            top: 335px;
+            left: 430px;
+            width: 70px;
+            height: 100px;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            cursor: pointer;
+
+
+        }
+        .score{
+            background: #dadada;
+            position: absolute;
+            width: 450px;
+            height: 70px;
+            left: 85px;
+            top: 520px;
+            border-radius: 20px;
+        }
+        .sc{
+            color:black;
+            font-family: sans-serif;
+            position: absolute;
+            left: 70px;
+            top: 7px;
+
+
+        }
+        .scbox{
+         
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            color:rgb(0, 0, 0);
+            left: 123px;
+            font-size: 20px;
+            top: 25px;
+
+           
+        }
+        .sc1{
+            color:rgb(0, 0, 0);
+            font-family: sans-serif;
+            position: absolute;
+            left: 25px;
+            top: -2px;
+
+
+        }
+        .restart{
+            color:white;
+            background: green;
+            border:none;
+            border-radius: 5px;
+            position: absolute;
+            top: 15px;
+            left: 250px;
+            padding: 10px;
+            font-size: 15px;
+
+        }
+        .restart:hover{
+            opacity: 0.5;
+        }
+    </style>
+
+
+    <div id="container" class="container">
+
+        <h1 class="head">HAMSTER HIT</h1>
+
+        <img class="ground" id="ground" alt="ground" src="./bg.jpg" width="635px" height="635px">
+        <div id="holes" class="holes">
+            <img class="hole1" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole2" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole3" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+
+
+            <img class="hole4" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole5" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole6" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+
+
+            <img class="hole7" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole8" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+            <img class="hole9" id="hole" alt="hole" src="./hole.webp" width="100px" height="100px">
+
+
+        </div>
+
+
+        <div id="hamsters" class="hamsters">
+            <div id="forham1" class="forham1">
+                <img class="ham1" id="ham1" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+
+
+            <div id="forham2" class="forham2">
+                <img class="ham2" id="ham2" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+
+            <div id="forham3" class="forham3">
+                <img class="ham3" id="ham3" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+            <div id="forham4" class="forham4">
+                <img class="ham4" id="ham4" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+
+            <div id="forham5" class="forham5">
+                <img class="ham5" id="ham5" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+            <div id="forham6" class="forham6">
+                <img class="ham6" id="ham6" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+            <div id="forham7" class="forham7">
+                <img class="ham7" id="ham7" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+
+            <div id="forham8" class="forham8">
+                <img class="ham8" id="ham8" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+
+            <div id="forham9" class="forham9">
+                <img class="ham9" id="ham9" alt="ham" src="./hamster.png" width="100px" height="100px">
+            </div>
+        </div>
+
+
+
+        <div  id="score" class="score">
+<h4 class="sc">SCORE:</h4><div id="scbox" class="scbox"><h4></h4></div>
+<input type="button" value="RESTART" class="restart" id="restart" onclick="reset()">
+        </div>
+
+    </div>
+<style>
+.ham1{
+display:block;
+}
+.ham2{
+display:none;
+}
+.ham3{
+display:none;
+}
+.ham4{
+  display:none;  
+}
+.ham5{
+display:none;
+}
+.ham6{
+display:none;
+}
+.ham7{
+display:none;
+}
+.ham8{
+   display:none; 
+}
+.ham9{
+   display:none; 
+}
+
+
+</style>
+<script src="hamjs.js"></script>
+
+</body>
+
+</html>
